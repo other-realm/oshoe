@@ -82,7 +82,7 @@ soleFcLw=soleFcLw.transformed((0,0,0,),(0,0,-30))
 soleFc=soleFcUp+soleFcLw
 sliceBelow=Box(length=200,width=350,height=200).transformed((0,0,0),(-20,150,-99))
 insole=loft([soleFc],ruled=True)
-insole=insole-sliceBelow
+insole=insole+sliceBelow
 insole
 show(insole)
 #%%
